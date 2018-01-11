@@ -1,4 +1,4 @@
-# Document-Similarity
+# Measuring-Document-Similarity
 
 ####  Lectuerer: *John Healy*
 ####  Student:   *Tianle Shu* 
