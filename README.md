@@ -37,7 +37,7 @@
 * Then you need enter the value of shingleSize: <br />
   `Please enter shingleSize:`
 
-##  *How to run use bycommand*
+##  *How to run use by command*
 * A Java Archive containing your API and runner classes with a main() method. You can create the JAR file using Ant or with the following command from inside the “bin” folder of the Eclipse project: <br />
 `jar –cf oop.jar `
 * The application should be executable from a command line as follows:  <br />
