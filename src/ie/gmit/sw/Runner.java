@@ -13,6 +13,13 @@ import java.util.Scanner;
 public class Runner {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws Exception {
+		/**
+		 * The main function is ask user to enter url about file-1 and file-2
+		 * and output the file content respectively
+		 * Next ask user to enter the k , poolsize ,BlockingQueuesize and shingleSize
+		 * finally will output the result of jaccard 
+		 * 
+		 */
 		Scanner sc = new Scanner(System.in);
 		String line;
 		Menu menu = new Menu();

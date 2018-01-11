@@ -54,8 +54,8 @@ public class Consumer {
 	/**
 	* 
 	* Creates a new <code><Integer,List<Integer>>run</code> method 
-	* save the hashcode and then retuen map
-	*
+	* take hashcode from <code>BlockingQueue<Shingle> queue</code> and then return the map
+	* 
 	*/
 	@SuppressWarnings({ "unused" })
 	public Map<Integer,List<Integer>> run(BlockingQueue<Shingle> q) {

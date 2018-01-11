@@ -8,6 +8,13 @@ import java.util.Set;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+* The Launcher Class
+*   
+* @author Tianle Shu
+* 
+* @version 1.0b
+*/
 public final class Launcher {
 	BlockingQueue<Shingle> q1;
 	BlockingQueue<Shingle> q2;
@@ -20,6 +27,10 @@ public final class Launcher {
 		init();
 	}
 	
+	/**
+	*  A init method 
+	*  
+	*/
 	public void init() {
 		q1 = new LinkedBlockingQueue<>(menu.getBlockingQueuesize());
 		q2 = new LinkedBlockingQueue<>(menu.getBlockingQueuesize());
@@ -36,6 +47,12 @@ public final class Launcher {
 		calculator();
 	}
 	
+	/**
+	 * Calculator method takes compare two Documents.
+	 * Calculates the minHash on each Document passed in.
+	 * Calculates the jaccard index of the two documents by first calculateing the 
+	 * intersection of the two sets of minHashes, and dividing it by the size of the minHashes.
+	 */
 	public void calculator() {
 		List<Integer> intersection = map.get(1);
 		Set<Integer> inter = new HashSet<Integer>(intersection);

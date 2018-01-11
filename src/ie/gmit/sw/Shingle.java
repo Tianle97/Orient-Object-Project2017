@@ -1,5 +1,7 @@
 package ie.gmit.sw;
 
+import java.util.concurrent.BlockingQueue;
+
 /**
 * The Shingle Class
 *   
@@ -15,6 +17,12 @@ public class Shingle {
 		super();
 	}
 	
+	/**
+	* 
+	* create Shingle construct
+	* int docID and hashcode
+	* 
+	*/
 	public Shingle(int docID, int hashcode) {
 		super();
 		this.docID = docID;

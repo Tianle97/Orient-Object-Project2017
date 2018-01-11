@@ -32,6 +32,12 @@ public class DocumnetParser {
 		this.docId = docId;	
 	}
 	
+	/**
+	* Read the document content and use " " to separated 
+	* Then call the addWordToBuffer method for save in Deque<String> buffer,
+	* Then create Shingle s for save result of Hashcode
+	* Finally make the value of s to BlockingQueue<Shingle> q
+	*/
 	public BlockingQueue<Shingle> run() {
 		String line = null;
 		try {
@@ -66,8 +72,7 @@ public class DocumnetParser {
 	}
 	
 	/**
-	* 
-	* Creates a new <code>init</code> method 
+	* Creates a new <code>getNextShingle</code> method 
 	*
 	*/
 	private Shingle getNextShingle() {
