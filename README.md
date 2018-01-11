@@ -23,4 +23,4 @@ The application should be executable from a command line as follows:
 `java –cp ./oop.jar ie.gmit.sw.Runner`
 
 ## *UML Diagram*
-![](Orient-Object-Project2017/Design-Diagram.png)
+![UML](https://github.com/Tianle97/Orient-Object-Project2017/blob/master/Design-Diagram/Design-Diagram.png)
