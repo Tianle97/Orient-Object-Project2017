@@ -1,6 +1,5 @@
 package ie.gmit.sw;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -20,13 +19,13 @@ public final class Launcher {
 		this.menu = menu;
 		init();
 	}
+	
 	public void init() {
 		q1 = new LinkedBlockingQueue<>(menu.getBlockingQueuesize());
 		q2 = new LinkedBlockingQueue<>(menu.getBlockingQueuesize());
 	}
 	
 	public void launch(String f1,String f2) throws Exception {
-		
 		DocumnetParser d1 = new DocumnetParser(f1, menu.getShingleSize(), menu.getK(), docId++);
 		q1 = d1.run();
 		Consumer c = new Consumer(menu.getK(),menu.getPoolsize());
@@ -37,14 +36,12 @@ public final class Launcher {
 		calculator();
 	}
 	
-	@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
 	public void calculator() {
 		List<Integer> intersection = map.get(1);
 		Set<Integer> inter = new HashSet<Integer>(intersection);
-		
+		 
 		inter.retainAll(map.get(2));
 		float jaccard = (float) (((float) (((float)inter.size())/(menu.getK()*1.0)))*100.0);
 		System.out.println("The document similarity is: "+jaccard+"%");
 	}
-	
 }

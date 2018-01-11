@@ -1,0 +1,20 @@
+ 
+Minimum Requirements:
+
+? Use the package name ie.gmit.sw. The application must be deployed and   runnable using the specification in Section 3.
+?使用包名称ie.gmit.sw.应用程序必须使用第3节中的规范进行部署和运行。
+
+? Input the path to two text files and any other parameters you need from a console-based menu-driven UI.
+?从基于控制台的菜单驱动的UI中输入两个文本文件的路径以及所需的任何其他参数。
+
+? Each file should be parsed in a separate thread and its constituent words / shingles added to a blocking queue for processing.
+?每个文件应在单独的线程中解析，并将其组成词/瓦片添加到阻塞队列进行处理。
+
+? A set of worker threads, one for each MinHash function, should take elements from the queue and process them.
+?一组工作线程，每个MinHash函数都应该从队列中获取元素并处理它们。
+
+? The MinHash approximation of the Jaccard Index of the two text files should then be reported to the user.
+?两个文本文件的Jaccard索引的MinHash近似值应该报告给用户。
+
+? Provide a UML diagram of your design and JavaDoc your code.
+?提供你的设计和JavaDoc的代码的UML图。

@@ -9,18 +9,38 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+* The Consumer Class
+*   
+* @author Tianle Shu
+* 
+* @version 1.0b
+*/
 public class Consumer {
+	/** The map. */
 	Map<Integer,List<Integer>> map;
 	BlockingQueue<Shingle> queue;
 	int k;
 	int[] minhashes;
 	ExecutorService pool;
 	
+	/**
+	* Creates a new <code>Consumer</code> object 
+	*
+	* @param int k
+	* @param int poolsize
+	*/
 	public Consumer (int k,int poolsize) {
 		this.k = k;
 		pool = Executors.newFixedThreadPool(poolsize);
 		init();
 	}
+
+	/**
+	* 
+	* Creates a new <code>init</code> method 
+	*
+	*/
 
 	public void init() {
 		Random random = new Random();
@@ -31,7 +51,13 @@ public class Consumer {
 		} 
 	}
 	
-	@SuppressWarnings({ "unused", "rawtypes", "unlikely-arg-type", "unchecked" })
+	/**
+	* 
+	* Creates a new <code><Integer,List<Integer>>run</code> method 
+	* save the hashcode and then retuen map
+	*
+	*/
+	@SuppressWarnings({ "unused" })
 	public Map<Integer,List<Integer>> run(BlockingQueue<Shingle> q) {
 		map = new HashMap<Integer,List<Integer>>();
 		this.queue = q;
@@ -76,5 +102,4 @@ public class Consumer {
 		}
 			return map;
 	}
-}
-				
+}				

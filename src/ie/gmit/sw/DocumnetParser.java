@@ -8,11 +8,19 @@ import java.util.LinkedList;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+* The DocumentParser Class
+*   
+* @author Tianle Shu
+* 
+* @version 1.0b
+*/
 public class DocumnetParser {
 	BlockingQueue<Shingle> q= new LinkedBlockingQueue<>();
 	private Deque<String> buffer = new LinkedList<>();
 	private String file;
 	private int shingleSize;
+	@SuppressWarnings("unused")
 	private int k;
 	private int docID;
 	int docId;
@@ -44,16 +52,24 @@ public class DocumnetParser {
 			} 
 		return q;
 	}
-
-
-
+	
+	/**
+	* Creates a new <code>addWordToBuffer</code> object 
+	*
+	* @param words
+	*/
 	public void addWordToBuffer(String[] words) {
 		for(String s: words)
 		{
 			buffer.add(s); // add(s):把s加到BlockingQueue里,即如果BlockingQueue可以容纳,则返回true,否则招聘异常
 		}
 	}
-
+	
+	/**
+	* 
+	* Creates a new <code>init</code> method 
+	*
+	*/
 	private Shingle getNextShingle() {
 		StringBuffer sb = new StringBuffer();
 		int counter = 0;
@@ -78,6 +94,11 @@ public class DocumnetParser {
 		
 	}
 	
+	/**
+	* 
+	* Creates a new <code>flushBuffer</code> method 
+	*
+	*/
 	private void flushBuffer() throws InterruptedException {
 		while(buffer.size()>0)
 		{
@@ -92,8 +113,4 @@ public class DocumnetParser {
 			}
 		}
 	}
-	
-	
-	
-
 }

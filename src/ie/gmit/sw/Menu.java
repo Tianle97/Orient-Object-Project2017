@@ -1,9 +1,12 @@
 package ie.gmit.sw;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.Scanner;
-
+/**
+* The Menu Class
+*   
+* @author Tianle Shu
+* 
+* @version 1.0b
+*/
 public class Menu {
 	int k;
 	int BlockingQueuesize;
@@ -13,7 +16,7 @@ public class Menu {
 	public int getShingleSize() {
 		return shingleSize;
 	}
-
+	
 	public void setShingleSize(int shingleSize) {
 		this.shingleSize = shingleSize;
 	}

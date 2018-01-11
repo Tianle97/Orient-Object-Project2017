@@ -1,5 +1,12 @@
 package ie.gmit.sw;
 
+/**
+* The Shingle Class
+*   
+* @author Tianle Shu
+* 
+* @version 1.0b
+*/
 public class Shingle {
 	private int docID;
 	private int hashcode;
@@ -29,5 +36,4 @@ public class Shingle {
 	public void setHashcode(int hashcode) {
 		this.hashcode = hashcode;
 	}
-	
 }
