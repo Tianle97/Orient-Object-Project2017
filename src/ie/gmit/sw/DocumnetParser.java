@@ -49,7 +49,7 @@ public class DocumnetParser {
 				addWordToBuffer(words);
 				Shingle s = getNextShingle();
 				s.setDocID(docID);
-				q.put(s);  //put(s):把s加到BlockingQueue里,如果BlockQueue没有空间,则调用此方法的线程被阻断直到BlockingQueue里面有空间再继续.
+				q.put(s);  
 			}
 			flushBuffer();
 			br.close();
@@ -67,7 +67,7 @@ public class DocumnetParser {
 	public void addWordToBuffer(String[] words) {
 		for(String s: words)
 		{
-			buffer.add(s); // add(s):把s加到BlockingQueue里,即如果BlockingQueue可以容纳,则返回true,否则招聘异常
+			buffer.add(s); 
 		}
 	}
 	
@@ -80,7 +80,7 @@ public class DocumnetParser {
 		int counter = 0;
 		while(counter<shingleSize)
 		{
-			if(buffer.peek()!=null)   //peek:检查
+			if(buffer.peek()!=null)   
 			{
 				sb.append(buffer.poll());
 			}

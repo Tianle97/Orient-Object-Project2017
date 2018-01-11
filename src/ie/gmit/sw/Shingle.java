@@ -1,7 +1,4 @@
 package ie.gmit.sw;
-
-import java.util.concurrent.BlockingQueue;
-
 /**
 * The Shingle Class
 *   
