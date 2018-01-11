@@ -43,8 +43,8 @@ public final class Launcher {
 		Set<Integer> inter = new HashSet<Integer>(intersection);
 		
 		inter.retainAll(map.get(2));
-		float jaccard = (float) (((float)inter.size())/(menu.getK()*1.0));
-		System.out.println(jaccard);
+		float jaccard = (float) (((float) (((float)inter.size())/(menu.getK()*1.0)))*100.0);
+		System.out.println("The document similarity is: "+jaccard+"%");
 	}
 	
 }

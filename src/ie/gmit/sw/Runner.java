@@ -9,18 +9,22 @@ public class Runner {
 		Scanner sc = new Scanner(System.in);
 		String line;
 		Menu menu = new Menu();
+		System.out.println("--------Java-api-for-document-similarity--------");
+		System.out.println("");
 		System.out.println("Please enter File path: ");
 		String fileName = sc.nextLine();
 	    BufferedReader br = new BufferedReader(new FileReader(fileName));
 	    while((line = br.readLine()) != null){
 			   System.out.println(line);
 		   }
+	    System.out.println("");
 	    System.out.println("Please enter File path: ");
 		String fileName2 = sc.nextLine();
 	    BufferedReader br2 = new BufferedReader(new FileReader(fileName2));
 	    while((line = br2.readLine()) != null){
 			   System.out.println(line);
 		   }
+	    System.out.println("");
 	    System.out.println("Please enter k:");
 	    menu.setK(sc.nextInt());
 	    System.out.println("Please enter the poolsize: ");
