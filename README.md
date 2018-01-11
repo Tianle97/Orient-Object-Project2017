@@ -17,10 +17,33 @@
 * The MinHash approximation of the Jaccard Index of the two text files should then be reported to the user.
 * Provide a UML diagram of your design and JavaDoc your code.
 
-A Java Archive containing your API and runner classes with a main() method. You can create the JAR file using Ant or with the following command from inside the “bin” folder of the Eclipse project:
-`jar –cf oop.jar *`
-The application should be executable from a command line as follows: 
+##  *Run in eclipse*
+* When you run in eclipse, the console will output <br />
+ `--------Java-api-for-document-similarity--------` <br />
+ `Please enter File path: `
+ *you need enter the path of the document* <br />
+ *For example: data//1.txt* <br />
+ The console will output: `Then document-1's contents` <br />
+ `Please enter File path: `
+ *you need enter the path of the document* <br />
+ *For example: data//2.txt* <br />
+ The console will output: `Then document-2's contents` <br />
+* Then you need enter the value of k: <br />
+  `Please enter k:` 
+* Then you need enter the value of poolsize: <br />
+  `Please enter poolsize:`
+* Then you need enter the value of BlockingQueuesize: <br />
+  `Please enter BlockingQueuesize:`
+* Then you need enter the value of shingleSize: <br />
+  `Please enter shingleSize:`
+
+##  *How to run use bycommand*
+* A Java Archive containing your API and runner classes with a main() method. You can create the JAR file using Ant or with the following command from inside the “bin” folder of the Eclipse project: <br />
+`jar –cf oop.jar `
+* The application should be executable from a command line as follows:  <br />
 `java –cp ./oop.jar ie.gmit.sw.Runner`
+
+
 
 ## *UML Diagram*
 ![UML](https://github.com/Tianle97/Orient-Object-Project2017/blob/master/Design-Diagram/Design-Diagram.png)
