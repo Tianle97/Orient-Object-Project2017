@@ -22,3 +22,5 @@ A Java Archive containing your API and runner classes with a main() method. You 
 The application should be executable from a command line as follows: 
 `java –cp ./oop.jar ie.gmit.sw.Runner`
 
+## *UML Diagram*
+![alt]( title)
